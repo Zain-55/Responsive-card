@@ -1,66 +1,63 @@
-import { Clicker_Script } from "next/font/google";
 import Image from "next/image";
 
 export default function Productcard() {
   return (
-    <main>
-    <h1 className="text-center text-white p-3 font-extrabold text-1xl bg-blue-300 shadow-lg sm:text-sm whitespace-nowrap lg:text-4xl md:text-3xl">
-  TOYOTA CAR COLLECTION
-</h1>
-      
-      <div className="lg:flex justify-around m-4 md:w-full">
-        <div className=" lg:w-1/4 border bg-gradient-to-r from-cyan-500 to-blue-400 rounded-2xl my-4 shadow-2xl">
-          <div className=" flex justify-center m-5">
-            <Image src="/Car1.png" alt="" width={300} height={200} />
+    <div className="bg-gradient-to-b from-gray-100 to-gray-300 min-h-screen py-10">
+      {/* Header */}
+      <h1 className="text-center text-white font-extrabold bg-blue-500 p-4 text-xl sm:text-2xl lg:text-5xl md:text-4xl shadow-lg uppercase tracking-wide">
+        Toyota Car Collection
+      </h1>
+
+      {/* Responsive Grid for Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+        {/* Card 1 */}
+        <div className="transform hover:scale-105 transition duration-300 ease-in-out bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl shadow-lg overflow-hidden">
+          <div className="flex justify-center p-6">
+            <Image src="/Car1.png" alt="Toyota Rivo" width={300} height={200} />
           </div>
-
-          <h1 className="text-center py-2 text-3xl">Toyota Rivo</h1>
-          <p className="text-center py-2 text-3xl text-red-500">$.50,000</p>
-
-          <div className="flex justify-center py-5 ">
-            <button className="bg-yellow-400   py-2 px-5 rounded-md shadow-lg text-3xl">
+          <h2 className="text-center text-white text-2xl font-bold">Toyota Rivo</h2>
+          <p className="text-center text-yellow-300 text-xl font-semibold py-2">
+            $50,000
+          </p>
+          <div className="flex justify-center py-4">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-6 rounded-md shadow-md transform hover:scale-110 transition duration-300 ease-in-out">
               Buy Now
             </button>
           </div>
         </div>
 
-        <div className="lg:w-1/4 border bg-gradient-to-r from-cyan-500 to-blue-400 rounded-2xl my-4 shadow-2xl">
-          <div className="flex justify-center m-5">
-            <Image src="/Car2.png" alt="" width={300} height={400} />
+        {/* Card 2 */}
+        <div className="transform hover:scale-105 transition duration-300 ease-in-out bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl shadow-lg overflow-hidden">
+          <div className="flex justify-center p-6">
+            <Image src="/Car2.png" alt="Civic VTI" width={300} height={400} />
           </div>
-
-          <p className="text-center py-2 text-3xl">Civic VTI</p>
-          <p className="text-center py-2 text-3xl text-red-500">$.40,000</p>
-
-          <div className="flex justify-center py-5">
-            <button className="bg-yellow-400 py-2 px-5 rounded-md shadow-lg text-3xl">
+          <h2 className="text-center text-white text-2xl font-bold">Civic VTI</h2>
+          <p className="text-center text-yellow-300 text-xl font-semibold py-2">
+            $40,000
+          </p>
+          <div className="flex justify-center py-4">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-6 rounded-md shadow-md transform hover:scale-110 transition duration-300 ease-in-out">
               Buy Now
             </button>
           </div>
         </div>
 
-        <div className=" lg:w-1/4 border bg-gradient-to-r from-cyan-500 to-blue-400 rounded-2xl my-4 shadow-2xl">
-          <div className="flex justify-center m-5">
-            <Image
-              src="/Car3.png"
-              alt=""
-              width={300}
-              height={300}
-              loading="lazy"
-            />
+        {/* Card 3 */}
+        <div className="transform hover:scale-105 transition duration-300 ease-in-out bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl shadow-lg overflow-hidden">
+          <div className="flex justify-center p-6">
+            <Image src="/Car3.png" alt="Corolla XLI" width={300} height={300} />
           </div>
-
-          <p className="text-center py-2 text-3xl">Corolla XLI</p>
-          <p className="text-center py-2 text-3xl text-red-500">$.30,000</p>
-
-          <div className="flex justify-center py-5">
-            <button className="bg-yellow-400 py-2 px-5 rounded-md shadow-lg text-3xl">
+          <h2 className="text-center text-white text-2xl font-bold">Corolla XLI</h2>
+          <p className="text-center text-yellow-300 text-xl font-semibold py-2">
+            $30,000
+          </p>
+          <div className="flex justify-center py-4">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-6 rounded-md shadow-md transform hover:scale-110 transition duration-300 ease-in-out">
               Buy Now
             </button>
           </div>
         </div>
       </div>
-        
-    </main>
+    </div>
   );
 }
